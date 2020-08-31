@@ -1,0 +1,72 @@
+@import "~@/style/vars.less";
+
+/deep/.ant-modal {
+    width: 860px !important;
+
+    &-footer {
+        display: none;
+    }
+    .tagging-table{
+        height: calc(100vh - 420px);
+    }
+    section {
+        display: flex;
+        align-items: center;
+
+        label {
+            margin-left: 15px;
+        }
+
+        .ant-input {
+            width: 100px;
+            margin-left: 4px;
+        }
+
+        .ant-select {
+            width: 90px;
+            margin-left: 4px;
+        }
+    }
+
+    .ant-table-wrapper {
+        margin: 20px 0;
+
+        .state-spot {
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            margin-right: 5px;
+            border-radius: 50%;
+            background: @gray-color;
+        }
+
+        .state-spot-active {
+            background: @primary-color;
+        }
+
+        .operation-icon {
+            width: 18px;
+            height: 18px;
+            color: @primary-color;
+            cursor: pointer;
+        }
+    }
+
+    .modal-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .progress {
+            span:first-child {
+                margin-right: 30px;
+            }
+
+            i {
+                font-style: normal;
+                color: @primary-color;
+            }
+        }
+    }
+
+}
